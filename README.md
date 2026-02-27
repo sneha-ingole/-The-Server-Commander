@@ -18,14 +18,24 @@ As a System Administrator, this project demonstrates how to:
 🏗️ Architecture
 
 Client (Browser)
+
 ⬇
+
 Internet
+
 ⬇
+
 EC2 / Virtual Machine (Ubuntu / Amazon Linux)
+
 ⬇
+
 Apache / Nginx Web Server
+
 ⬇
+
 Custom HTML Page
+
+
 
 
 🛠️ Tools & Technologies
@@ -39,6 +49,8 @@ Custom HTML Page
 🌐 Apache / Nginx Web Server
 
 💻 Linux Terminal
+
+
 
 
 ⚙️ Step 1: Launch Virtual Machine (AWS EC2)
@@ -64,6 +76,8 @@ Custom HTML Page
 6.Launch Instance
 
 
+
+
 🔐 Step 2: Connect to Server via SSH
 
 For Amazon Linux:
@@ -72,10 +86,17 @@ ssh -i key.pem ec2-user@your-public-ip
 
 
 Install Apache (Amazon Linux)
+
 sudo yum update -y
+
 sudo yum install httpd -y
+
 sudo systemctl start httpd
+
 sudo systemctl enable httpd
+
+
+
 
 📄 Step 4: Create Custom Web Page
 
@@ -88,6 +109,8 @@ cd /var/www/html
 Create index.html:
 
 sudo nano index.html
+
+
 
 
 Add the following content:
@@ -104,6 +127,8 @@ Add the following content:
 </html>
 
 Save and exit.
+
+
 
 
 🌍 Step 5: Access Website
